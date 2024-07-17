@@ -1,0 +1,10 @@
+library(ggplot2)
+year=2010:2014
+population<-c(1000,1020,1040,1060,1080)
+year_population_data=data.frame(year,population)
+print(year_population_data)
+ggplot(weight_height_data,aes(x=year,y=population))+
+geom_line(color='green',size=1)+
+geom_point(color="purple",size=3)+
+labs(title="years vs population",x="year",y="population")
+
